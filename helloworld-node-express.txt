@@ -1,0 +1,21 @@
+1. Initialize project and link it to npm
+    npm init
+
+2. press enter for all options but for entry point name it "app.js"
+
+3. install express
+    npm install express --save
+
+4. create a file named app.js
+    var express = require('express');
+    var app = express();
+    app.get('/', function (req, res) {
+        res.send('Hello World!');
+    });
+    app.listen(3000, function () {
+        console.log('Example app listening on port 3000!');
+    });
+5. run the file using node
+    node app.js
+
+6. navigate to https://localhost:3000 to see hello world
