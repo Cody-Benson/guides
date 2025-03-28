@@ -1,0 +1,12 @@
+    var express = require('express');
+    var app = express();
+
+    let user = {name:'john',}
+
+    app.get('/:id', function (req, res) {
+        if()
+    });
+
+    app.listen(3000, function () {
+        console.log('Example app listening on port 3000!');
+    });

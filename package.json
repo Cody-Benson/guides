@@ -1,0 +1,23 @@
+{
+  "name": "guides",
+  "version": "1.0.0",
+  "description": "programming guides",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cody-Benson/guides.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cody-Benson/guides/issues"
+  },
+  "homepage": "https://github.com/Cody-Benson/guides#readme",
+  "dependencies": {
+    "@types/node": "^22.13.14",
+    "express": "^4.21.2"
+  }
+}
