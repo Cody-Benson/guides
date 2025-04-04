@@ -1,0 +1,147 @@
+type: collection.insomnia.rest/5.0
+name: express-guide
+meta:
+  id: wrk_731bfbbd2bde4ba29111e0773ce1e2d7
+  created: 1743188544149
+  modified: 1743787545555
+collection:
+  - url: localhost:3000/users/:email
+    name: Get specific user
+    meta:
+      id: req_8f42b12bd8df4496b91726a9c39cfad8
+      created: 1743787674266
+      modified: 1743799446560
+      isPrivate: false
+      sortKey: -1743787674266
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+    pathParameters:
+      - name: email
+        value: cody@mail.com
+  - url: localhost:3000/users
+    name: Get all users
+    meta:
+      id: req_5cb8b9eaacd644b3ab16e53f52bf0a50
+      created: 1743787733264
+      modified: 1743799380366
+      isPrivate: false
+      sortKey: -1743787733264
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users/:email
+    name: Delete User
+    meta:
+      id: req_167a43e105994b25940f616474d97d1c
+      created: 1743799025466
+      modified: 1743804929289
+      isPrivate: false
+      sortKey: -1743799025466
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+    pathParameters:
+      - name: email
+        value: coday
+  - url: localhost:3000/users
+    name: Create User
+    meta:
+      id: req_4d87d8a02038495888b889e6533da654
+      created: 1743799045431
+      modified: 1743800867017
+      isPrivate: false
+      sortKey: -1743799045431
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"cody benson",
+        	"email":"codyfd@mail.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users/:email
+    name: Update user
+    meta:
+      id: req_cd1f4b105cab407baf32b5f2a1fb1a7d
+      created: 1743799069810
+      modified: 1743804741415
+      isPrivate: false
+      sortKey: -1743799069810
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"cody benson",
+        	"email":"cody@mail.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+    pathParameters:
+      - name: email
+        value: cody@mail.com
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e43692ce53e88aa6b1e86eb7cf638f3a1f9c2920
+    created: 1743787545814
+    modified: 1743787545814
+environments:
+  name: Base Environment
+  meta:
+    id: env_e43692ce53e88aa6b1e86eb7cf638f3a1f9c2920
+    created: 1743188544150
+    modified: 1743787545555
+    isPrivate: false
